@@ -5,7 +5,7 @@
   text-decoration: none;
   outline: none;
   box-sizing: border-box;
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 
 .slideshow {
@@ -14,8 +14,6 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(241, 241, 241);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 .slide {
@@ -23,9 +21,11 @@
   align-items: center;
   justify-content: center;
   width: 80%;
-  margin: 0 auto;
-  /* padding: 10px; */
-  /* border: 3px solid blanchedalmond; */
+  margin: 3px auto;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+  border-width: 3px;
 }
 
 .slide img {
@@ -33,12 +33,10 @@
   height: auto;
   margin-right: 20px;
 }
+/* #39A2DB
+#146C94
+#A1990E */
 
-/* .slide p {
-  max-width: 50%;
-  font-size: 18px;
-  line-height: 1.5;
-} */
 .description {
   color: black;
   font-family: "Poppins", sans-serif;
@@ -50,6 +48,15 @@
   border: 2px solid #ccc;
   border-radius: 10px;
   margin: 0px;
-  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
+.description ol {
+  list-style-type: lower-alpha;
+  padding-left: 40px;
+}
+
+.description li {
+  margin-bottom: 0.25em;
+}
+/* tambah */
