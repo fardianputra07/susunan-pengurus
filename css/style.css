@@ -240,5 +240,9 @@ h1 {
     display: grid;
     place-items: center;
   }
+  .slide img {
+    width: 150px;
+    height: auto;
+  }
 }
 /* deskripsi */
