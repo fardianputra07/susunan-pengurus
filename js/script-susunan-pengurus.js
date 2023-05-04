@@ -48,12 +48,12 @@ function plusBid3(n) {
   showBid3((slideIndex7 += n), document.getElementsByClassName("bid3"));
 }
 //bid4
-// var slideIndex8 = 1;
-// showBid4(slideIndex8, document.getElementsByClassName("bid4"));
+var slideIndex8 = 1;
+showBid4(slideIndex8, document.getElementsByClassName("bid4"));
 
-// function plusBid4(n) {
-//   showBid4((slideIndex8 += n), document.getElementsByClassName("bid4"));
-// }
+function plusBid4(n) {
+  showBid4((slideIndex8 += n), document.getElementsByClassName("bid4"));
+}
 //bid5
 var slideIndex9 = 1;
 showBid5(slideIndex9, document.getElementsByClassName("bid5"));
@@ -165,19 +165,19 @@ function showBid3(n, x) {
   }
   x[slideIndex7 - 1].style.display = "block";
 }
-// function showBid4(n, x) {
-//   var i;
-//   if (n > x.length) {
-//     slideIndex8 = 1;
-//   }
-//   if (n < 1) {
-//     slideIndex8 = x.length;
-//   }
-//   for (i = 0; i < x.length; i++) {
-//     x[i].style.display = "none";
-//   }
-//   x[slideIndex8 - 1].style.display = "block";
-// }
+function showBid4(n, x) {
+  var i;
+  if (n > x.length) {
+    slideIndex8 = 1;
+  }
+  if (n < 1) {
+    slideIndex8 = x.length;
+  }
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex8 - 1].style.display = "block";
+}
 function showBid5(n, x) {
   var i;
   if (n > x.length) {
