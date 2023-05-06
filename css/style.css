@@ -149,6 +149,9 @@ h1 {
   margin: 5px auto;
 }
 
+.description li {
+  list-style-type: lower-alpha;
+}
 /* .slide {
   display: flex;
   align-items: center;
