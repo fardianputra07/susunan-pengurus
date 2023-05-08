@@ -258,7 +258,7 @@ h1 {
     place-items: center;
   }
   .slide img {
-    width: 200px;
+    width: 100%;
     height: auto;
   }
   .description {
