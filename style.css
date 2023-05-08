@@ -8,8 +8,8 @@
   list-style-type: none;
 }
 /*html {
-    height: 3000px;
-  }*/
+  height: 3000px;
+}*/
 /* Style Navigasi Bar Start*/
 .navbar {
   /*Bagian nav fixed(tetap)*/
@@ -58,6 +58,12 @@ ul {
   cursor: pointer;
 }
 #icon-menu {
+  height: 20px;
+}
+.menu-wrapper > a {
+  display: none;
+}
+.chevron-down {
   height: 20px;
 }
 /*Hamburger Icon*/
@@ -273,6 +279,11 @@ ul {
     font-size: 1.5rem;
     color: white;
   }
+  .menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   .menu-item {
     display: block;
     padding-top: 2rem;
@@ -288,6 +299,9 @@ ul {
   #icon-menu {
     height: 12px;
   }
+  .menu-wrapper > a {
+    display: block;
+  }
   .dropdown,
   .dropdown-beranda {
     display: block;
@@ -297,6 +311,14 @@ ul {
     background-color: transparent;
     box-shadow: none;
     overflow: hidden;
+
+    transition: 0.3s;
+  }
+  .dropdown-content {
+    display: none;
+  }
+  .dropdown.active .dropdown-content {
+    display: block;
   }
   .dropdown-content {
     padding-left: 3rem;
@@ -338,8 +360,11 @@ ul {
   .navbar {
     height: 50px;
   }
+  .navbar-menu {
+    overflow: auto;
+  }
   .logo-nav {
-    height: 4.5rem;
+    height: 3.8rem;
     width: auto;
     cursor: none;
   }
